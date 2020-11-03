@@ -1,0 +1,107 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $line-grey;
+  padding: 24px 10%;
+  flex-wrap: wrap;
+  &__navbar {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    padding-right: 48px;
+  }
+  &__search-form {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $light-grey;
+  padding: 24px 10%;
+  flex-wrap: wrap;
+  width: 80%;
+  &__navbar {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    padding-right: 48px;
+    color: $dark-grey !important;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content {
+  padding: 24px 10%;
+  min-height: calc(80vh - 100px);
+  &__title {
+    font-size: $font-xl;
+    line-height: $lh-xl;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 24px;
+  }
+}
+.card {
+  width: 280px;
+  margin-bottom: 24px;
+  border: 1px solid $line-grey;
+  &__img {
+    height: 160px;
+    background-size: cover;
+    &-disable {
+      opacity: 0.5;
+    }
+  }
+  &__info {
+    padding: 20px 24px;
+  }
+  &__title {
+    font-size: $font-lg;
+    line-height: $lh-lg;
+    font-weight: 100;
+    margin: 0;
+    &-disable {
+      opacity: 0.5;
+    }
+  }
+  &__info-cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+  }
+  &__cost {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__price {
+    margin: 0;
+    font-size: $font-md;
+    line-height: $lh-md;
+    width: 100px;
+    &-prev {
+      text-decoration: line-through;
+      color:$grey;
+      padding-bottom: 5px;
+      font-size: $font-sm;
+      line-height: $lh-sm;
+    }
+    &-sold {
+      color:$grey;
+      width: 200px;
+    }
+  }
+}

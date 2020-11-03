@@ -1,0 +1,20 @@
+@import 'variables.scss';
+@import 'components.scss';
+@import 'elements';
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'),
+  url('./fonts/merriweather-v22-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('./fonts/merriweather-v22-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  background-color: $light;
+  height: 100%;
+}
+* {
+  color: $dark;
+  font-family: 'Merriweather';
+}
